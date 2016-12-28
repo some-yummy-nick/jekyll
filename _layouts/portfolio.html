@@ -1,0 +1,16 @@
+<div class="portfolio">
+  <h2 class="title">Моё портфолио</h2>
+  <div class="portfolio__items">
+    {% for post in site.categories.shop %}
+    <div class="portfolio__item">
+      <img src="assets/img/{{ post.title}}.jpg" alt="portfolio__item" width="220"/>
+      <div class="portfolio__hover">
+        <h3>{{ post.title}}</h3>
+        <p>{{ post.description }}</p>
+        <a href="https://github.com/yeffasol/{{ post.title}}" target="_blank">Проект на Github</a>
+        <a href="http://yeffasol.github.io/{{ post.title}}/" target="_blank">Посмотреть онлайн</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

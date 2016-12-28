@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+<!--[if lt IE 8]>
+<p class="chromeframe">Похоже, что ты используешь устаревший браузер, друг. Пожалуйста, <a
+    href="http://browsehappy.com/">скачай новый браузер абсолютно бесплатно</a> или <a
+    href="http://www.google.com/chromeframe/?redirect=true">активируй Google Chrome Frame</a></p>
+<![endif]-->
+<div class="wrapper">
+  <div class="content">
+    {% include header.html %}
+    <div class="container clearfix">
+      <aside class="sidebar">
+        {% include menu.html %}
+      </aside>
+      <div class="inner-content">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+  {% include footer.html %}
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+<script src="assets/index.js"></script>
+</body>
+</html>
