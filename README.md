@@ -1,1 +1,3 @@
-jekyll
+jekyll build
+
+jekyll server
